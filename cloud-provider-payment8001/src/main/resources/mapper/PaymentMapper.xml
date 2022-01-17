@@ -3,7 +3,7 @@
 
 <mapper namespace="com.xy.springcloud.payment.dao.PaymentDao">
 
-    <resultMap id="BaseResultMap" type="com.xy.springcloud.payment.entities.Payment">
+    <resultMap id="BaseResultMap" type="com.xy.springcloud.entities.Payment">
         <id column="id" property="id" jdbcType="BIGINT"/>
         <result column="serial" property="serial" jdbcType="VARCHAR"/>
     </resultMap>
