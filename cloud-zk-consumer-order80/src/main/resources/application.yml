@@ -3,8 +3,11 @@ server:
 
 spring:
   application:
-    name: cloud-consumer-order
+    name: cloud-consumer-order  # Spring 应用名,
   cloud:
     #注册到zookeeper地址
     zookeeper:
       connect-string: 127.0.0.1:2181
+      # ZooKeeper 作为注册中心的配置项，对应 ZooKeeperDiscoveryProperties 配置类
+      discovery:
+        root: /services # ZooKeeper 数据存储的根节点，默认为 /services，其内存放的是 application.name 的节点， 如果是集群，节点内实例存在多份

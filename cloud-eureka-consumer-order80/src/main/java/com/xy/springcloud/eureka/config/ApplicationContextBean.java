@@ -15,4 +15,9 @@ public class ApplicationContextBean {
         return new RestTemplate();
     }
 
+    @Bean(name = "noLoadBalanceRestTemplate")
+    public RestTemplate noLoadBalanceRestTemplate() {
+        return new RestTemplate();
+    }
+
 }

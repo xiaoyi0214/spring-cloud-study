@@ -9,9 +9,13 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 @EnableEurekaServer
 public class EurekaServer7001 {
 
-    /*
-     * -Dspring.profiles.active=7001
-     * -Dspring.profiles.active=7002
+    /**
+     * 单机版：
+     *      -Dspring.profiles.active=self7001
+     *
+     * 集群版：
+     *      -Dspring.profiles.active=ek7001
+     *      -Dspring.profiles.active=ek7002
      * */
 
     public static void main(String[] args) {
